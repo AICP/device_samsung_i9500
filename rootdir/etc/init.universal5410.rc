@@ -26,14 +26,6 @@ on init
     mkdir /mnt/media_rw/sdcard1 0775 system system
     mkdir /mnt/media_rw/usbdisk 0775 system system
 
-    mkdir /storage/sdcard1 0775 system system
-    mkdir /storage/usbdisk 0775 system system
-    mkdir /mnt/media_rw/sdcard1 0775 system system
-    mkdir /mnt/media_rw/usbdisk 0775 system system
-
-    mkdir /storage/sdcard1 0700 root root
-    mkdir /storage/usbdisk 0700 root root
-
     export EXTERNAL_STORAGE /storage/emulated/legacy
     export SECONDARY_STORAGE /storage/sdcard1:/storage/usbdisk
     export EMULATED_STORAGE_SOURCE /mnt/shell/emulated
@@ -478,13 +470,13 @@ service pvrsrvctl /system/vendor/bin/pvrsrvctl --start --no-module
 # virtual sdcard daemon running as media_rw (1023)
 service sdcard /system/bin/sdcard /data/media /mnt/shell/emulated 1023 1023
     class late_start
-#    oneshot
-
-service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 -l  /mnt/media_rw/sdcard1 /storage/sdcard1
+#  oneshot
+ 
+service fuse_sdcard1 /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/sdcard1 /storage/sdcard1
     class late_start
     disabled
-
-service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023  -l /mnt/media_rw/usbdisk /storage/usbdisk
+ 
+service fuse_usbdisk /system/bin/sdcard -u 1023 -g 1023 /mnt/media_rw/usbdisk /storage/usbdisk
     class late_start
     disabled
 
