@@ -145,9 +145,6 @@ BOARD_SEPOLICY_UNION := \
 BOARD_CHARGING_MODE_BOOTING_LPM := /sys/class/power_supply/battery/batt_lp_charging
 BOARD_BATTERY_DEVICE_NAME := battery
 
-# Suspend in charger to disable capacitive keys
-BOARD_CHARGER_ENABLE_SUSPEND := true
-
 # Releasetools
 #TARGET_RELEASETOOLS_EXTENSIONS := $(LOCAL_PATH)
 

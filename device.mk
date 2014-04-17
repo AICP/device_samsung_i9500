@@ -68,11 +68,6 @@ PRODUCT_PACKAGES += \
     e2fsck \
     setup_fs
 
-# Charger
-PRODUCT_PACKAGES += \
-	charger \
-	charger_res_images
-
 # GPS
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/gps.cer:system/etc/gps.cer \
