@@ -59,20 +59,12 @@ on boot
     write /sys/devices/platform/s5p-ehci/power/control auto
 
     start playlpm
-    start lpmkey
 
 # Services
 
 service ueventd /sbin/ueventd
     critical
 
-service playlpm /system/bin/playlpm
-    user root
-    disabled
-
-service immvibed /system/bin/immvibed
-    oneshot
-
-service lpmkey /system/bin/lpmkey
+service playlpm /system/bin/lpm
     user root
     disabled
