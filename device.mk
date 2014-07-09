@@ -51,9 +51,6 @@ PRODUCT_PACKAGES += \
     tinymix \
     audio.r_submix.default
 
-PRODUCT_PACKAGES += \
-    power.universal5410
-
 # Audio Configuration
 PRODUCT_PROPERTY_OVERRIDES += \
     persist.audio.handset.mic.type=digital \
