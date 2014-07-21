@@ -156,6 +156,7 @@
          config to 7. -->
     <integer name="config_deviceHardwareKeys">7</integer>
 
+    <!--Enable Wifi Display-->
     <bool name="config_enableWifiDisplay">true</bool>
 
 
