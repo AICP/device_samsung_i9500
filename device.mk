@@ -49,21 +49,7 @@ PRODUCT_PACKAGES += \
     audio.usb.default \
     audio.r_submix.default \
     mixer_paths.xml \
-    tinymix \
-    audio.r_submix.default
-
-# Audio Configuration
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.audio.handset.mic.type=digital \
-    persist.audio.dualmic.config=endfire \
-    persist.audio.fluence.voicecall=true \
-    persist.audio.fluence.voicerec=false \
-    persist.audio.fluence.speaker=false \
-    af.resampler.quality=4
-
-# Setup custom emergency number list based on the MCC. This is needed by RIL
-PRODUCT_PROPERTY_OVERRIDES += \
-    persist.radio.custom_ecc=1
+    tinymix
 
 # Bluetooth
 PRODUCT_COPY_FILES += \
@@ -168,8 +154,7 @@ PRODUCT_PACKAGES += \
 
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/configs/p2p_supplicant_overlay.conf:system/etc/wifi/p2p_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf \
-    $(LOCAL_PATH)/configs/wpa_supplicant.conf:system/etc/wifi/wpa_supplicant.conf
+    $(LOCAL_PATH)/configs/wpa_supplicant_overlay.conf:system/etc/wifi/wpa_supplicant_overlay.conf
 
 # Set default USB interface
 PRODUCT_DEFAULT_PROPERTY_OVERRIDES += \
