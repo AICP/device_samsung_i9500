@@ -16,6 +16,7 @@
 
 <!-- Phone app resources that may need to be customized
      for different hardware or product builds. -->
+
 <resources>
     <!-- Determine whether calls to mute the microphone in PhoneUtils
          are routed through the android.media.AudioManager class (true) or through
@@ -24,4 +25,7 @@
 
     <!-- Flag indicating if the tty is enabled -->
     <bool name="tty_enabled">true</bool>
+
+    <!-- Determines if device implements a noise suppression device for in call audio-->
+    <bool name="has_in_call_noise_suppression">true</bool>
 </resources>
