@@ -1,0 +1,42 @@
+[
+    {
+        "repository": "CyanogenMod/android_packages_apps_SamsungServiceMode",
+        "target_path": "packages/apps/SamsungServiceMode",
+        "branch":      "cm-12.1"
+    },
+    {
+        "repository": "CyanogenMod/android_hardware_samsung",
+        "target_path": "hardware/samsung",
+        "branch":      "cm-12.1"
+    },
+    {
+        "repository": "CyanogenMod/android_hardware_samsung_slsi_exynos",
+        "target_path": "hardware/samsung_slsi/exynos",
+        "branch":      "cm-12.1"
+    },
+    {
+        "repository": "CyanogenMod/android_hardware_samsung_slsi_exynos5-insignal",
+        "target_path": "hardware/samsung_slsi/exynos5-insignal",
+        "branch":      "cm-12.1"
+    },
+    {
+        "repository": "CyanogenMod/android_hardware_samsung_slsi_exynos5410",
+        "target_path": "hardware/samsung_slsi/exynos5410",
+        "branch":      "cm-12.1"
+    },
+    {
+        "repository": "CyanogenMod/android_hardware_samsung_slsi_openmax",
+        "target_path": "hardware/samsung_slsi/openmax",
+        "branch":      "cm-12.1"
+    },
+    {
+        "repository": "AICP/proprietary_vendor_samsung",
+        "target_path": "vendor/samsung",
+        "branch":      "lp5.1"
+    },
+    {
+        "repository": "CyanogenMod/android_kernel_samsung_exynos5410",
+        "target_path": "kernel/samsung/exynos5410",
+        "branch":      "cm-12.1"
+    }
+]
