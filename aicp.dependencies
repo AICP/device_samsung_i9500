@@ -10,23 +10,23 @@
         "branch":      "cm-12.1"
     },
     {
-        "repository": "CyanogenMod/android_hardware_samsung_slsi_exynos",
-        "target_path": "hardware/samsung_slsi/exynos",
+        "repository": "CyanogenMod/android_hardware_samsung_slsi-cm_exynos",
+        "target_path": "hardware/samsung_slsi-cm/exynos",
         "branch":      "cm-12.1"
     },
     {
-        "repository": "CyanogenMod/android_hardware_samsung_slsi_exynos5-insignal",
-        "target_path": "hardware/samsung_slsi/exynos5-insignal",
+        "repository": "CyanogenMod/android_hardware_samsung_slsi-cm_exynos5",
+        "target_path": "hardware/samsung_slsi-cm/exynos5",
         "branch":      "cm-12.1"
     },
     {
-        "repository": "CyanogenMod/android_hardware_samsung_slsi_exynos5410",
-        "target_path": "hardware/samsung_slsi/exynos5410",
+        "repository": "CyanogenMod/android_hardware_samsung_slsi-cm_exynos5410",
+        "target_path": "hardware/samsung_slsi-cm/exynos5410",
         "branch":      "cm-12.1"
     },
     {
-        "repository": "CyanogenMod/android_hardware_samsung_slsi_openmax",
-        "target_path": "hardware/samsung_slsi/openmax",
+        "repository": "CyanogenMod/android_hardware_samsung_slsi-cm_openmax",
+        "target_path": "hardware/samsung_slsi-cm/openmax",
         "branch":      "cm-12.1"
     },
     {
